@@ -1,9 +1,19 @@
-= raccept
+= Raccept (Rack Accepts Helper)
 
-Description goes here.
+Converts Ruby objects to JSON or XML based on accepts headers.
+
+== Use
+
+  # in config.ru
+  use Raccept
+  lambda {|env| [200,{}, {:this => 'is a Hash'}]}
+
+  # Will respond with ...
+  # accepts text/xml
+
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
