@@ -1,6 +1,7 @@
 require 'json'
 
 # This will require active-support and enhance it so more objects can tbe to_xml'd
+# xml_serialization was found here: http://github.com/alpinegizmo/xml_serialization
 require File.dirname(__FILE__) + '/../vendor/xml_serialization/lib/xml_serialization'
 
 class Raccept
