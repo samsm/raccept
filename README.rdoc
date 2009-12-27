@@ -6,21 +6,24 @@ Converts Ruby objects to JSON or XML based on accepts headers.
 
   # in config.ru
   use Raccept
-  lambda {|env| [200,{}, {:this => 'is a Hash'}]}
+  run lambda {|env| [200,{"Content-Type" => "text/plain"}, {:this => 'is a Hash'} ] }
 
   # Will respond with ...
-  # accepts text/xml
+  # accepts application/xml or text/xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <hash>
+    <this>is a Hash</this>
+  </hash>
+
+  # Accepts application/json or text/json
+  {"this":"is a Hash"}
 
 
-== Note on Patches/Pull Requests
+== Todo, maybe
 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+* Make into gem?
+* Get something leaner than ActiveSupport for to_xml?
+* Add tests for it.
 
 == Copyright
 
