@@ -4,6 +4,10 @@ Converts Ruby objects to JSON or XML based on accepts headers.
 
 Ignores legal Rack responses like "string" and ["string","string"]
 
+== Install
+
+  gem install raccept
+
 == Use
 
   # in config.ru
@@ -23,7 +27,6 @@ Ignores legal Rack responses like "string" and ["string","string"]
 
 == Todo, maybe
 
-* Make into gem?
 * Get something leaner than ActiveSupport for to_xml?
 * Support custom objects somehow?
 * Add tests for it.

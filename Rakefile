@@ -5,12 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "raccept"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Transforms Ruby objects into xml or json based on accepts headers.}
+    gem.description = %Q{This middleware turns Ruby objects that are not acceptable Rack bodies into xml or json depending upon the accepts header.}
     gem.email = "samsm@samsm.com"
     gem.homepage = "http://github.com/samsm/raccept"
     gem.authors = ["Sam Schenkman-Moore"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    # gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
