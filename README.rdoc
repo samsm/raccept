@@ -11,7 +11,7 @@ Ignores legal Rack responses like "string" and ["string","string"]
   run lambda {|env| [200,{"Content-Type" => "text/plain"}, {:this => 'is a Hash'} ] }
 
   # Will respond with ...
-  # accepts application/xml or text/xml
+  # Accepts application/xml or text/xml
   <?xml version="1.0" encoding="UTF-8"?>
   <hash>
     <this>is a Hash</this>
